@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Много мебели</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <!-- <meta name="description" content=""> -->
+    <!-- <link rel="canonical" href="" />
+    <link rel="shortcut icon" href="assets/images/logo-1.svg" type="image/x-icon"> -->
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <main class="account-page">
+
+        <section class="section-registration">
+            <div class="container">
+                <div class="section-registration__inner">
+                    <h1 class="title_account">Регистрация</h1>
+                    <div class="account-page__navigation">
+                        <ul>
+                            <li>Главная</li>
+                            <li>Авторизация</li>
+                            <li>Регистрация</li>
+                        </ul>
+                    </div>
+                    <p>Зарегистрируйтесь, чтобы использовать все возможности
+                        личного кабинета: отслеживание заказов,
+                        настройку подписки, связи с социальными сетями и другие. Мы
+                        никогда и ни при каких условиях не разглашаем личные данные клиентов. Контактная информация
+                        будет использована только для оформления заказов и более удобной
+                        работы с сайтом.</p>
+
+
+                    <form class="registration-form js-account-form" id="registration-form" name="registration-form"
+                        action="/" method="POST">
+                        <label class="input-item req">
+                            <span class="input-item__label">Фамилия</span>
+                            <input type="text" class="input-item__input" name="lastname" value="" placeholder=""
+                                required>
+                        </label>
+                        <label class="input-item req">
+                            <span class="input-item__label">Имя</span>
+                            <input type="text" class="input-item__input" name="name" value="" placeholder="" required>
+                        </label>
+                        <label class="input-item input-item_grey req">
+                            <span class="input-item__label">E-mail</span>
+                            <input type="text" class="input-item__input" name="email" value="" placeholder="" required>
+                        </label>
+                        <label class="input-item input-item_grey input-item_phone">
+                            <span class="input-item__label">Телефон</span>
+                            <div class="phone-dropdown-container">
+                                <div class="phone-dropdown-container__inner">
+                                    <span class="dropdown-toggle">
+                                        <span class="country-icon"><img src="https://flagcdn.com/ru.svg"
+                                                alt="Russia"></span>
+                                    </span>
+                                    <div class="country-dropdown">
+                                        <div class="country-option" data-country-code="+1">
+                                            <span class="country-icon"><img src="https://flagcdn.com/us.svg"
+                                                    alt="USA"></span>
+                                        </div>
+                                        <div class="country-option" data-country-code="+44">
+                                            <span class="country-icon"><img src="https://flagcdn.com/gb.svg"
+                                                    alt="UK"></span>
+                                        </div>
+                                        <div class="country-option" data-country-code="+7">
+                                            <span class="country-icon"><img src="https://flagcdn.com/ru.svg"
+                                                    alt="Russia"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="tel" class="input-item__input" name="phone" value="" placeholder="">
+                        </label>
+                        <label class="input-item input-item_grey  password req">
+                            <span class="input-item__label">Пароль</span>
+                            <input type="password" name="password" placeholder=""
+                                class="password-input input-item__input" required>
+                            <span class="input-item__info">Длина пароля не менее 8 символов.</span>
+                            <span class="password-control"></span>
+                        </label>
+                        <label class="input-item input-item_grey password req" data-error="Пароли не совпадают.">
+                            <span class="input-item__label">Подтверждение пароля </span>
+                            <input type="password" name="password-repeat" placeholder=""
+                                class="password-input input-item__input" required>
+                            <span class="password-control"></span>
+                        </label>
+                        <div class="form__bottom d-flex jc-sb al-center">
+                            <div class="form-consent d-flex al-center jc-center">
+                                <label class="checkbox-ios">
+                                    <input type="checkbox">
+                                    <span class="checkbox-ios-switch"></span>
+                                    <span class="input-item__label">Я согласен на <a href="" class="link_blue">обработку
+                                            персональных
+                                            данных</a>
+                                </label>
+                            </div>
+                            <div class="form__btns btn-wrap d-flex al-center"> <button type="submit"
+                                    class="btn_account">Зарегистрироваться</button>
+                                <span class="required-text"><span>*</span>
+                                    – обязательные поля</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <section class="section-account">
+            <div class="container">
+                <div class="page-account__row">
+                    <div class="page-account__col account-menu-col">
+                        <nav class="account-menu">
+                            <ul class="account-menu-list">
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-1"></use>
+                                        </svg>
+                                        Мой профиль</a></li>
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-2"></use>
+                                        </svg>
+                                        Избранное</a></li>
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-3"></use>
+                                        </svg>
+                                        Мои заказы</a></li>
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-3"></use>
+                                        </svg>
+                                        Программа лояльности</a></li>
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-4"></use>
+                                        </svg>
+                                        Помощь</a></li>
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-5"></use>
+                                        </svg>
+                                        Выйти</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="page-account__col">
+                        <h1 class="title_account">Мой профиль</h1>
+                        <div class="account-form-wrap">
+                            <form class="account-form" id="account-form" name="account-form" action="/" method="POST">
+                                <label class="input-item req">
+                                    <span class="input-item__label">Фамилия</span>
+                                    <input type="text" class="input-item__input" name="lastname" value="" placeholder=""
+                                        required>
+                                </label>
+                                <label class="input-item req">
+                                    <span class="input-item__label">Имя</span>
+                                    <input type="text" class="input-item__input" name="name" value="" placeholder=""
+                                        required>
+                                </label>
+                                <label class="input-item input-item_grey req">
+                                    <span class="input-item__label">E-mail</span>
+                                    <input type="text" class="input-item__input" name="email" value="" placeholder=""
+                                        required>
+                                </label>
+                                <label class="input-item input-item_grey input-item_phone">
+                                    <span class="input-item__label">Телефон</span>
+                                    <div class="phone-dropdown-container">
+                                        <div class="phone-dropdown-container__inner">
+                                            <span class="dropdown-toggle">
+                                                <span class="country-icon"><img src="https://flagcdn.com/ru.svg"
+                                                        alt="Russia"></span>
+                                            </span>
+                                            <div class="country-dropdown">
+                                                <div class="country-option" data-country-code="+1">
+                                                    <span class="country-icon"><img src="https://flagcdn.com/us.svg"
+                                                            alt="USA"></span>
+                                                </div>
+                                                <div class="country-option" data-country-code="+44">
+                                                    <span class="country-icon"><img src="https://flagcdn.com/gb.svg"
+                                                            alt="UK"></span>
+                                                </div>
+                                                <div class="country-option" data-country-code="+7">
+                                                    <span class="country-icon"><img src="https://flagcdn.com/ru.svg"
+                                                            alt="Russia"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="tel" class="input-item__input" name="phone" value="" placeholder="">
+                                </label>
+                                <div class="checkbox-ios-wrap w-100">
+                                    <label class="checkbox-ios">
+                                        <input type="checkbox">
+                                        <span class="checkbox-ios-switch"></span>
+                                        <span class="input-item__label">Я согласен на <a href=""
+                                                class="link_blue">обработку персональных
+                                                данных</a>
+                                    </label>
+                                    <label class="checkbox-ios">
+                                        <input type="checkbox">
+                                        <span class="checkbox-ios-switch"></span>
+                                        <span class="input-item__label">Я согласен на <a href="#" class="link_blue">cбор
+                                                данных</a></a>
+                                    </label>
+                                    <label class="checkbox-ios">
+                                        <input type="checkbox">
+                                        <span class="checkbox-ios-switch"></span>
+                                        <span class="input-item__label">Я согласен на <a href="#"
+                                                class="link_blue">хранение
+                                                данных</a></a>
+                                    </label>
+                                    <label class="checkbox-ios">
+                                        <input type="checkbox">
+                                        <span class="checkbox-ios-switch"></span>
+                                        <span class="input-item__label">Даю согласие на обработку моих персональных
+                                            данных
+                                            для получения рекламно-информационной рассылки о товарах, работах, услугах
+                                            "Много Мебели"
+                                            по Viber/SMS/Email/Web push в соответствии с <a href="#">условиями
+                                                обработки</a> и
+                                            подтверждаю, что до дачи
+                                            согласия ознакомился с разъяснением прав, связанных с обработкой, механизмом
+                                            их реализации,
+                                            последствиями дачи согласия и отказа.
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <section class="section-loyalty">
+            <div class="container">
+                <div class="page-account__row">
+                    <div class="page-account__col account-menu-col">
+                        <nav class="account-menu">
+                            <ul class="account-menu-list">
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-1"></use>
+                                        </svg>
+                                        Программа лояльности</a></li>
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-2"></use>
+                                        </svg>
+                                        Избранное</a></li>
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-3"></use>
+                                        </svg>
+                                        Мои заказы</a></li>
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-3"></use>
+                                        </svg>
+                                        Программа лояльности</a></li>
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-4"></use>
+                                        </svg>
+                                        Помощь</a></li>
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-5"></use>
+                                        </svg>
+                                        Выйти</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="page-account__col">
+                        <h1 class="title_account">Программа лояльности</h1>
+                        <div class="section-loyalty__links">
+                            <a href="#" class="section-loyalty__link">
+                                Кабинет рефералодателя
+                            </a>
+                            <a href="#" class="section-loyalty__link">
+                                Кабинет пользователя
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <section class="section-user">
+            <div class="container">
+                <div class="page-account__row">
+                    <div class="page-account__col account-menu-col">
+                        <nav class="account-menu">
+                            <ul class="account-menu-list">
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-1"></use>
+                                        </svg>
+                                        Программа лояльности</a></li>
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-2"></use>
+                                        </svg>
+                                        Избранное</a></li>
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-3"></use>
+                                        </svg>
+                                        Мои заказы</a></li>
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-3"></use>
+                                        </svg>
+                                        Программа лояльности</a></li>
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-4"></use>
+                                        </svg>
+                                        Помощь</a></li>
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-5"></use>
+                                        </svg>
+                                        Выйти</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="page-account__col">
+                        <div class="page-account__col-inner">
+                            <h1 class="title_account">Кабинет пользователя</h1>
+                            <div class="account-cards">
+                                <div class="account-card">
+                                    <div class="account-card__top">
+                                        Баланс счета
+                                    </div>
+                                    <div class="account-card__body">
+                                        15 000 баллов
+                                    </div>
+                                    <div class="account-card__bottom">
+                                        <a href="#">История</a>
+                                    </div>
+                                </div>
+                                <div class="account-card">
+                                    <div class="account-card__top">
+                                        Последняя транзакция
+                                    </div>
+                                    <div class="account-card__body">
+                                        -200 баллов
+                                    </div>
+                                    <div class="account-card__bottom">
+                                        Оплата заказа
+                                    </div>
+                                </div>
+                                <div class="account-card">
+                                    <div class="account-card__top">
+                                        Ранг
+                                    </div>
+                                    <div class="account-card__body">
+                                        Золотой
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transactions-block">
+                                <h2 class="title_account">
+                                    История транзакций
+                                </h2>
+                                <div class="input-item-wrap">
+                                    <label class="input-item">
+                                        <input type="search" class="input-item__input" name="filter-search" value=""
+                                            placeholder="Фильтр и поиск">
+                                    </label>
+                                </div>
+                                <div class="transactions-table-wrap">
+                                    <table class="transactions-table">
+                                        <thead>
+                                            <tr>
+                                                <th>№</th>
+                                                <th>транзакции</th>
+                                                <th>Операция</th>
+                                                <th>Дата и время</th>
+                                                <th>Сумма операции</th>
+                                                <th>Баланс до</th>
+                                                <th>Баланс после</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Списание</td>
+                                                <td>Списание баллов по заказу О-ОЛ0000000304 </td>
+                                                <td>22.09.2024 14:58:36</td>
+                                                <td class="transactions-table__col-green">200</td>
+                                                <td>270</td>
+                                                <td>70</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Начисление</td>
+                                                <td>Списание баллов по заказу О-ОЛ0000000304 </td>
+                                                <td>22.09.2024 14:58:36</td>
+                                                <td class="transactions-table__col-red">200</td>
+                                                <td>270</td>
+                                                <td>70</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Списание</td>
+                                                <td>Списание баллов по заказу О-ОЛ0000000304 </td>
+                                                <td>22.09.2024 14:58:36</td>
+                                                <td>200</td>
+                                                <td>270</td>
+                                                <td>70</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <section class="section-referral">
+            <div class="container">
+                <div class="page-account__row">
+                    <div class="page-account__col account-menu-col">
+                        <nav class="account-menu">
+                            <ul class="account-menu-list">
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-1"></use>
+                                        </svg>
+                                        Программа лояльности</a></li>
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-2"></use>
+                                        </svg>
+                                        Избранное</a></li>
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-3"></use>
+                                        </svg>
+                                        Мои заказы</a></li>
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-3"></use>
+                                        </svg>
+                                        Программа лояльности</a></li>
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-4"></use>
+                                        </svg>
+                                        Помощь</a></li>
+                                <li><a href="#">
+                                        <svg>
+                                            <use xlink:href="#icon-5"></use>
+                                        </svg>
+                                        Выйти</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="page-account__col">
+                        <div class="page-account__col-inner">
+                            <h1 class="title_account">Кабинет рефералодателя</h1>
+                            <div class="section-referral__text-wrap">
+                                <p>Вы можете стать рефералодателем и получать вознаграждение с привлеченных
+                                    вами рефералов.Для
+                                    этого воспользуйтесь инструментами привязки рефералов и начните строить свою
+                                    реферальную
+                                    сеть!<br>
+                                    <a href="#">Подробное описание нашей реферальной программы</a>
+                                </p>
+                            </div>
+                            <div class="account-cards">
+                                <div class="account-card">
+                                    <div class="account-card__top">
+                                        Реферальная сеть
+                                    </div>
+                                    <div class="account-card__body">
+                                        0
+                                    </div>
+                                </div>
+                                <div class="account-card">
+                                    <div class="account-card__top">
+                                        Оборот реферальной сети
+                                    </div>
+                                    <div class="account-card__body">
+                                        0
+                                    </div>
+                                </div>
+                                <div class="account-card">
+                                    <div class="account-card__top">
+                                        Баланс счета
+                                    </div>
+                                    <div class="account-card__body">
+                                        15 000 баллов
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-referral__tabs-wrap">
+                                <div class="custom-tabs-wrap">
+                                    <div class="custom-tab active">
+                                        Инструменты привязки </div>
+                                    <div class="custom-tab">
+                                        Реферальная сеть</div>
+                                </div>
+                                <div class="custom-tabs-content-wrap col-100-xs">
+                                    <div class="custom-tab-content opened">
+                                        <div class="custom-tab-content__title">
+                                            Реферальная ссылка
+                                        </div>
+                                        <div class="custom-tab-content__text">Это специальная ссылка, содержащая вашу
+                                            идентификационную информацию,
+                                            предназначенная для привязки рефералов к вашему аккаунту на сайте
+                                            и получения
+                                            вознаграждения с них.</div>
+                                        <div class="referral-link">
+                                            <div class="input-item-wrap">
+                                                <label class="input-item">
+                                                    <input type="text" name="referral-link"
+                                                        value="https://mnogomebeli.com//?ref=4" readonly
+                                                        class="input-item__input">
+                                                </label>
+                                            </div>
+                                            <div class="referral-link_copy-btn">Поделиться</div>
+                                        </div>
+                                    </div>
+                                    <div class="custom-tab-content">
+                                        2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, asperiores.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <a href="#!" class="btn_account" data-popup-open="popup-account">Кнопка для попапа</a>
+
+
+        <div class="popup" data-popup-id="popup-account">
+            <div class="popup__wrapper">
+                <div class="popup__inner">
+                    <div class="popup__content">
+                        <button class="popup__btn-close popup-close"></button>
+                        <div class="popup-account__content">
+                            <div class="title_account">Личный кабинет</div>
+                        </div>
+                        <form class="login-form js-account-form" id="login-form" name="login-form" action="/"
+                            method="POST">
+                            <label class="input-item req">
+                                <span class="input-item__label">Логин</span>
+                                <input type="text" class="input-item__input" name="lastname" value="" placeholder=""
+                                    required="">
+                            </label>
+                            <label class="input-item input-item_grey  password req">
+                                <span class="input-item__label">Пароль</span>
+                                <input type="password" name="password" placeholder=""
+                                    class="password-input input-item__input" required>
+                                <span class="password-control"></span>
+                            </label>
+                            <div class="login-form__row">
+                                <div class="login-form__col">
+                                    <div class="login-form__el">
+                                        <label class="checkbox-ios">
+                                            <input type="checkbox">
+                                            <span class="checkbox-ios-switch"></span>
+                                            <span class="input-item__label">Запомнить меня</a>
+                                            </span></label>
+                                    </div>
+                                    <div class="login-form__el">
+                                        <span class="required-text"><span>*</span>
+                                            – обязательные поля</span>
+                                    </div>
+                                </div>
+                                <div class="login-form__col">
+                                    <a href="#" class="link_blue"> Забыли пароль?</a>
+                                </div>
+                            </div>
+                            <div class="form__bottom d-flex jc-sb al-center">
+                                <button type="submit" class="btn_account">Авторизоваться</button>
+                                <button type="submit" class="btn_account btn_account-white">Регистрация</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+
+</body>
+
+
+
+<svg width="0" height="0" display="none">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-1" fill="none">
+        <g clip-path="url(#clip0_2854_6496)">
+            <g clip-path="url(#clip1_2854_6496)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.7152 18.6315C15.3515 18.6315 18.2993 15.6837 18.2993 12.0474C18.2993 8.41108 15.3515 5.46326 11.7152 5.46326C8.07893 5.46326 5.1311 8.41108 5.1311 12.0474C5.1311 15.6837 8.07893 18.6315 11.7152 18.6315Z"
+                    stroke="#333333" stroke-width="0.731568" />
+                <path
+                    d="M11.7037 10.5896H11.7037C11.5017 10.5896 11.3379 10.7534 11.3379 10.9554V15.3448C11.3379 15.5468 11.5017 15.7106 11.7037 15.7106C11.9057 15.7106 12.0695 15.5468 12.0695 15.3448V10.9554C12.0695 10.7534 11.9057 10.5896 11.7037 10.5896Z"
+                    fill="#333333" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.6879 10.08C11.421 10.08 11.2124 9.87147 11.2124 9.60447C11.2124 9.33339 11.421 9.12897 11.6879 9.12897C11.959 9.12897 12.1635 9.33339 12.1635 9.60447C12.1635 9.87147 11.959 10.08 11.6879 10.08Z"
+                    fill="#333333" />
+            </g>
+        </g>
+        <defs>
+            <clipPath id="clip0_2854_6496">
+                <rect width="24" height="24" fill="white" />
+            </clipPath>
+            <clipPath id="clip1_2854_6496">
+                <rect width="24" height="24" fill="white" />
+            </clipPath>
+        </defs>
+    </symbol>
+
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-2" fill="none">
+        <g clip-path="url(#clip0_2854_6501)">
+            <g clip-path="url(#clip1_2854_6501)">
+                <g clip-path="url(#clip2_2854_6501)">
+                    <path
+                        d="M17.5681 0.452271H5.86303C2.63077 0.452271 0.010498 3.07254 0.010498 6.3048V18.0099C0.010498 21.2421 2.63077 23.8624 5.86303 23.8624H17.5681C20.8004 23.8624 23.4206 21.2421 23.4206 18.0099V6.3048C23.4206 3.07254 20.8004 0.452271 17.5681 0.452271Z"
+                        fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6.37238 11.6731C5.99287 11.1154 5.80013 10.4256 5.88102 9.68915C6.03578 8.28449 7.22162 7.15895 8.66006 7.04615C9.86048 6.95219 10.9291 7.53965 11.5062 8.45537C11.602 8.60741 11.8285 8.60741 11.9245 8.45537C12.5012 7.54067 13.5684 6.95345 14.7673 7.04591C16.2177 7.15823 17.4103 8.30081 17.5526 9.71819C17.6278 10.4656 17.421 11.1633 17.0243 11.7223L17.01 11.7421L11.9659 17.1572C11.8397 17.3186 11.5911 17.3186 11.4649 17.1572L6.42074 11.7421L6.37238 11.6731Z"
+                        stroke="#333333" stroke-width="0.731568" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+            </g>
+        </g>
+        <defs>
+            <clipPath id="clip0_2854_6501">
+                <rect width="24" height="24" fill="white" />
+            </clipPath>
+            <clipPath id="clip1_2854_6501">
+                <rect width="24" height="24" fill="white" />
+            </clipPath>
+            <clipPath id="clip2_2854_6501">
+                <rect width="24" height="24" fill="white" />
+            </clipPath>
+        </defs>
+    </symbol>
+
+
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-3" fill="none">
+        <g clip-path="url(#clip0_2854_6506)">
+            <g clip-path="url(#clip1_2854_6506)">
+                <g clip-path="url(#clip2_2854_6506)">
+                    <path
+                        d="M16.646 15.646L19.293 13H3V12H19.293L16.646 9.354L17.353 8.647L21.207 12.5L17.353 16.354L16.646 15.646Z"
+                        fill="#666666" />
+                </g>
+            </g>
+        </g>
+        <defs>
+            <clipPath id="clip0_2854_6506">
+                <rect width="24" height="24" fill="white" />
+            </clipPath>
+            <clipPath id="clip1_2854_6506">
+                <rect width="24" height="24" fill="white" />
+            </clipPath>
+            <clipPath id="clip2_2854_6506">
+                <rect width="24" height="24" fill="white" />
+            </clipPath>
+        </defs>
+    </symbol>
+
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-4" fill="none">
+        <g clip-path="url(#clip0_2854_6501)">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.7152 18.8295C15.3515 18.8295 18.2993 15.8817 18.2993 12.2454C18.2993 8.60909 15.3515 5.66132 11.7152 5.66132C8.07893 5.66132 5.1311 8.60909 5.1311 12.2454C5.1311 15.8817 8.07893 18.8295 11.7152 18.8295Z"
+                stroke="#333333" stroke-width="0.731568" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.019 10.6946C10.0108 10.7945 10.0765 10.8853 10.1767 10.8874L10.501 10.8942C10.6333 10.897 10.7255 10.7881 10.7433 10.657C10.8193 10.0944 11.2012 9.89268 11.8167 9.89268C12.453 9.89268 12.8629 10.2812 12.8629 10.8107C12.8629 11.2676 12.6707 11.5367 12.1754 11.8398C11.5904 12.19 11.3171 12.5743 11.3214 13.1379V13.1572C11.3214 13.3635 11.4886 13.5308 11.695 13.5308H11.7911C11.9444 13.5308 12.0687 13.4065 12.0687 13.2532C12.0687 12.8048 12.2224 12.5657 12.7647 12.2455C13.3112 11.9167 13.6571 11.4427 13.6571 10.7723C13.6571 9.89268 12.9226 9.22656 11.8466 9.22656C10.6761 9.22656 10.092 9.8079 10.019 10.6946ZM11.2109 14.9911C11.2109 15.2644 11.4244 15.4779 11.6977 15.4779C11.9752 15.4779 12.1845 15.2644 12.1845 14.9911C12.1845 14.7136 11.9752 14.5043 11.6977 14.5043C11.4244 14.5043 11.2109 14.7136 11.2109 14.9911Z"
+                fill="#333333" />
+        </g>
+        <defs>
+            <clipPath id="clip0_2854_6512">
+                <rect width="24" height="24" fill="white" />
+            </clipPath>
+        </defs>
+    </symbol>
+
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-5" fill="none">
+        <g clip-path="url(#clip0_2854_6515)">
+            <g clip-path="url(#clip1_2854_6515)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.2524 17.644C13.4847 17.644 16.1049 15.0238 16.1049 11.7915C16.1049 8.55925 13.4847 5.93896 10.2524 5.93896C7.02016 5.93896 4.3999 8.55925 4.3999 11.7915C4.3999 15.0238 7.02016 17.644 10.2524 17.644Z"
+                    stroke="#333333" stroke-width="0.731568" />
+                <path
+                    d="M20.4944 12.1573V12.1573C20.4944 11.9553 20.3306 11.7915 20.1286 11.7915H11.3498C11.1478 11.7915 10.984 11.9553 10.984 12.1573C10.984 12.3593 11.1478 12.5231 11.3498 12.5231H20.1286C20.3306 12.5231 20.4944 12.3593 20.4944 12.1573Z"
+                    fill="#333333" />
+                <path d="M20.5711 12.1573L17.6448 15.0835" stroke="#333333" stroke-width="0.731568"
+                    stroke-linecap="round" />
+                <path d="M20.5711 12.1573L17.6448 9.231" stroke="#333333" stroke-width="0.731568"
+                    stroke-linecap="round" />
+            </g>
+        </g>
+        <defs>
+            <clipPath id="clip0_2854_6515">
+                <rect width="24" height="24" fill="white" />
+            </clipPath>
+            <clipPath id="clip1_2854_6515">
+                <rect width="24" height="24" fill="white" />
+            </clipPath>
+        </defs>
+    </symbol>
+
+</svg>
+
+
+</html>
